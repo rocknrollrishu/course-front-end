@@ -21,6 +21,7 @@ nav{
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
+    /* background: #323232; */
 }
 nav .logo{
     padding-left: 2rem;
@@ -33,19 +34,25 @@ nav .logo{
 nav .logo:hover{
     color: #ff1e56;
 }
+.nav-button{
+    display: none;
+    font-size: 2rem;
+}
 nav ul {
     display: flex;
+    align-items: center;
 }
 nav ul li{
     margin: 0 .5rem;
     padding: .5rem 1rem;
     cursor: pointer;
+    border-radius: 2rem;
 }
 nav ul li:hover{
     background: #ff1e56;
 }
 nav ul li a{
-    color: #000;
+    color: #323232;
     font-size: 1rem;
     letter-spacing: 2px;
 }
@@ -53,11 +60,12 @@ nav ul li:hover a{
     color: #fff;
 }
 .landing-section{
-    margin: 1rem;
+    background : linear-gradient(to bottom, #cae1ff, #f0ffff);
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 70vh;
 }
 .landing-section > *{
     flex: 1 1 100%;
@@ -69,12 +77,15 @@ nav ul li:hover a{
 .landing-text h2{
     font-size: 2rem;
     line-height: 1;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
 }
 .landing-text h2 span{
     display: block;
     font-size: 3rem;
     font-family: cursive;
     color: #ff1e56;
+    text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: .5rem;
 }
@@ -83,6 +94,7 @@ nav ul li:hover a{
     margin-bottom: .3rem;
     font-size: 1.5rem;
     color: #535461;
+    font-family: Helvetica, sans-serif;
 }
 .landing-text p{
     color: #444;
@@ -92,5 +104,31 @@ nav ul li:hover a{
 }
 .landing-image svg{
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0;
+    background: #323232;
+}
+#services h2{
+    font-size: 2rem;
+    color: #ff1e56;
+}
+#services p{
+    padding-top: 1rem;
+    color: #fff;
+    text-align: center;
+    max-width: 50%;
+}
+#about{
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#about .aboutus-content svg{
+        width: 200px;
+        height: 200px;
 }
