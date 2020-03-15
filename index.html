@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="moblie">
                 <a href="#" class="logo">Logo</a>
                 <span class="nav-button">&#9776;</span>
-            </div>
-            
-            <ul>
-                <li><a href="#" class="nav-links">Home</a></li>
-                <li><a href="#" class="nav-links">Services</a></li>
-                <li><a href="#" class="nav-links">Contact us</a></li>
-                <li><a href="#" class="nav-links">About</a></li>
+            </div>    
+            <ul id="nav-items">
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#services" class="nav-links">Services</a></li>
+                <li><a href="#contactus" class="nav-links">Contact us</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
             </ul>
         </nav>
         <section class="landing-section">
@@ -126,18 +125,67 @@
         </section>
         <section id="about">
             <div class="aboutus-content">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-html5 fa-w-12 fa-7x"><path fill="currentColor" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" class=""></path></svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="html5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-html5 fa-w-12 fa-7x"><path fill="#ff1e56" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" class=""></path></svg>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quis mollitia dolore quasi quibusdam saepe tenetur laboriosam alias reprehenderit nulla.</p>
             </div>
             <div class="aboutus-content">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-css3-alt fa-w-12 fa-7x"><path fill="currentColor" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" class=""></path></svg>
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="css3-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-css3-alt fa-w-12 fa-7x"><path fill="#ff1e56" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" class=""></path></svg>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate reprehenderit quos rerum explicabo, excepturi esse autem consectetur! Repellendus, dolor?</p>
             </div>
             <div class="aboutus-content">
+                
+<svg fill="#ff1e56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z"/></svg>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias facilis similique dicta cumque dolorum earum veritatis voluptatem ipsam distinctio ullam!</p>
             </div>
         </section>
-        <section id="contactus"></section>
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <form action="" method="post">   
+                <div class="form-container">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="tel" name="" id="" placeholder="Contact No.">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <textarea name="" class="massage" id=""  rows="3" placeholder="Massage"></textarea>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
     </main>
+    <footer>
+        <a href="" class="logo">logo</a>
+        <div class="social">
+            <h5>follow us</h5>
+            <a href="#facebook"><svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="none" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
+            </svg></a>
+            <a href="#twitter"><svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+            </svg></a>
+            <a href="#outube"><svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="none" d="M9.62,8.236h0.179c0.396,0,0.716-0.318,0.716-0.711V6.368c0-0.393-0.32-0.711-0.716-0.711H9.62c-0.396,0-0.716,0.318-0.716,0.711v1.157C8.904,7.917,9.224,8.236,9.62,8.236 M9.44,6.324c0-0.147,0.121-0.267,0.269-0.267c0.148,0,0.269,0.12,0.269,0.267v1.245c0,0.147-0.12,0.267-0.269,0.267c-0.148,0-0.269-0.12-0.269-0.267V6.324z M11.41,8.236c0.357,0,0.671-0.312,0.671-0.312v0.267h0.537V5.657h-0.537v1.957c0,0-0.18,0.222-0.358,0.222c-0.18,0-0.18-0.134-0.18-0.134V5.657h-0.536V7.88C11.007,7.88,11.052,8.236,11.41,8.236 M7.517,8.191h0.626V6.812l0.716-1.957H8.277L7.83,6.146l-0.447-1.29H6.756l0.76,1.957V8.191z M11.052,11.139c-0.116,0-0.207,0.068-0.269,0.135v1.794c0.057,0.061,0.141,0.119,0.269,0.119c0.269,0,0.269-0.299,0.269-0.299v-1.451C11.32,11.437,11.275,11.139,11.052,11.139 M10,0.469c-5.264,0-9.531,4.267-9.531,9.531c0,5.264,4.267,9.531,9.531,9.531c5.264,0,9.531-4.268,9.531-9.531C19.531,4.736,15.264,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.879-8.665-8.665c0-4.785,3.879-8.665,8.665-8.665c4.786,0,8.665,3.88,8.665,8.665C18.665,14.786,14.786,18.665,10,18.665 M13.289,8.792c0,0-1.642-0.085-3.289-0.085c-1.642,0-3.289,0.085-3.289,0.085c-0.742,0-1.343,0.573-1.343,1.28c0,0-0.134,0.831-0.134,1.664c0,0.831,0.134,1.664,0.134,1.664c0,0.708,0.601,1.28,1.343,1.28c0,0,1.616,0.086,3.289,0.086c1.615,0,3.289-0.086,3.289-0.086c0.741,0,1.343-0.572,1.343-1.28c0,0,0.134-0.84,0.134-1.664c0-0.84-0.134-1.664-0.134-1.664C14.632,9.365,14.03,8.792,13.289,8.792 M8.054,10.242H7.382v3.372H6.756v-3.372H6.084V9.688h1.969V10.242z M9.754,13.614H9.217v-0.257c0,0-0.313,0.299-0.671,0.299c-0.357,0-0.402-0.342-0.402-0.342v-2.646H8.68v2.475c0,0,0,0.129,0.179,0.129c0.179,0,0.358-0.214,0.358-0.214v-2.39h0.537V13.614z M11.856,12.974c0,0,0,0.683-0.491,0.683c-0.302,0-0.485-0.16-0.583-0.283v0.241h-0.581V9.688h0.581v1.273c0.089-0.094,0.308-0.292,0.583-0.292c0.357,0,0.491,0.298,0.491,0.683V12.974z M13.96,11.395v0.854h-1.118v0.64c0,0,0,0.299,0.268,0.299c0.27,0,0.27-0.299,0.27-0.299v-0.299h0.581v0.47c0,0-0.09,0.598-0.805,0.598c-0.717,0-0.851-0.598-0.851-0.598v-1.664c0,0,0-0.726,0.851-0.726C14.005,10.669,13.96,11.395,13.96,11.395 M13.109,11.139c-0.268,0-0.268,0.298-0.268,0.298v0.384h0.537v-0.384C13.379,11.437,13.379,11.139,13.109,11.139"></path>
+            </svg></a>
+        </div>
+        <div class="contact">
+            <h5>Contact No</h5>
+            <a href="tel:+917830935295">Call Us: +917830935295</a>
+            <a href="mailto:ankitrishu420@gmail.com"> Email: ankitrishu420@gmail.com</a>
+        </div>
+        <div class="links">
+            <h5>links</h5>
+            <ul>
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#services" class="nav-links">Services</a></li>
+                <li><a href="#contactus" class="nav-links">Contact us</a></li>
+                <li><a href="#about" class="nav-links">About</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+            var collapse = document.querySelector('#nav-items');
+            var navButton = document.querySelector('.nav-button'); 
+            navButton.addEventListener('click', () =>{
+                collapse.classList.toggle('active');
+            })
+    </script>
 </body>
 </html>
