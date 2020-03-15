@@ -292,7 +292,7 @@ footer .contact a{
     max-width: 50%;
 }
 #contactus .form-container input[type = submit]{
-    width: 20%;
+    width: 50%;
 }
 footer{
     flex-wrap: wrap;
