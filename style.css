@@ -261,12 +261,13 @@ footer .contact a{
   @media (max-width: 767px){
     nav{
         flex-direction: column;
-        width: 100%;
-        align-items: stretch;
+        align-items: center;
     }
      .moblie{
         display: flex;
         justify-content: space-between;
+        
+        justify-self: center;
         width: 90%;
     }
     .nav-button{
@@ -274,13 +275,13 @@ footer .contact a{
         cursor: pointer;
     }
     nav ul {
-        margin-top: 2rem;
         flex-direction: column;
         height: 0;
         overflow: hidden;
         transition: height 0.5s ease-in-out;
     }
     nav ul.active{
+        margin-top: 2rem;
         height: 200px;
         transition: height 0.5s ease-in-out;
     }
