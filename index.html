@@ -181,11 +181,24 @@
         </div>
     </footer>
     <script>
+        var nav = document.querySelector('nav');
             var collapse = document.querySelector('#nav-items');
             var navButton = document.querySelector('.nav-button'); 
             navButton.addEventListener('click', () =>{
                 collapse.classList.toggle('active');
             })
+            window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.querySelector("header");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    nav.classList.add("fixed");
+  } else {
+    nav.classList.remove("fixed");
+  }
+}
     </script>
 </body>
 </html>
