@@ -28,12 +28,12 @@ ctx.fillStyle = "#fff"
 ctx.fillText("SECONDS", 315, 602);
 
 // time function start here
-var timeLeft = 24 * 60 * 60;
+var timeLeft = 60 * 60;
 var countdown = 0
 var gif = new GIF({
 workers: 4,
 workerScript: '/gif.worker.js',
-quality: 4,
+quality: 1,
 dither: 'Atkinson-serpentine',
 width: 375,
 height: 655
