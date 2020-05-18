@@ -28,7 +28,7 @@ ctx.fillStyle = "#fff"
 ctx.fillText("SECONDS", 315, 602);
 
 // time function start here
-var timeLeft = 60 * 60;
+var timeLeft = 120 * 60;
 var countdown = 0
 var gif = new GIF({
 workers: 4,
@@ -48,7 +48,7 @@ function formatTime(s) {
     let sec = second < 10 ? `0${second}` : `${second}`;
     return [hrs, minute, sec]
 }
-    for(countdown = 30*60; countdown < timeLeft; countdown++){
+    for(countdown = 0; countdown < (30*60)+1; countdown++){
         var texts = formatTime(timeLeft - countdown)
         // ctx.fillRect(21, 500, 339, 90)
         ctx.beginPath();
