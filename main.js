@@ -48,7 +48,7 @@ function formatTime(s) {
     let sec = second < 10 ? `0${second}` : `${second}`;
     return [hrs, minute, sec]
 }
-    for(countdown = 0; countdown < timeLeft+1; countdown++){
+    for(countdown = 30*60; countdown < timeLeft; countdown++){
         var texts = formatTime(timeLeft - countdown)
         // ctx.fillRect(21, 500, 339, 90)
         ctx.beginPath();
